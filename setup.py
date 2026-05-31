@@ -4,14 +4,14 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setup(
-    name="timetrack-cli",
+    name="devtime-cli",
     version="1.0.0",
-    author="TimeTrack Team",
-    author_email="contact@timetrack.dev",
+    author="DevTime Team",
+    author_email="contact@devtime.dev",
     description="A powerful command-line time tracking tool for developers",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/yourusername/timetrack-cli",
+    url="https://github.com/gitstq/devtime-cli",
     packages=find_packages(),
     classifiers=[
         "Development Status :: 5 - Production/Stable",
@@ -35,8 +35,8 @@ setup(
     ],
     entry_points={
         "console_scripts": [
-            "timetrack=timetrack.cli:main",
-            "tt=timetrack.cli:main",
+            "devtime=timetrack.cli:main",
+            "dt=timetrack.cli:main",
         ],
     },
 )
